@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body, html {
+            margin: 0;
+            height: 100%;
+        }
+
+        .login-container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .login-form {
+            background-color: #5BBCFF;
+            color: white;
+            padding: 50px;
+            width: 50%;
+        }
+
+        .image-section {
+            background-image: url('https://www.summit-urgentcare.com/wp-content/uploads/2014/12/Dollarphotoclub_61408582.jpg');
+            background-size: cover; 
+            width: 50%;
+        }
+
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box; /* Ensure padding is included in the width */
+        }
+
+        .remember-me {
+            margin-bottom: 20px; 
+        }
+        
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form">
+          <form method="post">
+            <h1>Smart Doctor</h1>
+            <p>Welcome to our App</p>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br>
+            <button type="submit">Login</button>
+          </form>
+        </div>
+        <div class="image-section"></div>
+    </div>
+</body>
+</html>
